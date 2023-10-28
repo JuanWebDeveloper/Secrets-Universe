@@ -1,0 +1,79 @@
+.welcome-banner {
+ background-image: url('/images/welcome-background.jpg');
+ background-size: cover;
+ background-position: center;
+ position: relative;
+ padding: $pad-double;
+ width: 100%;
+
+ &::before {
+  background-color: rgba($purple-ultra-dark, 0.9);
+  content: '';
+  height: 100%;
+  left: 0%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+ }
+
+ .content {
+  position: relative;
+  width: 100%;
+
+  .banner-text {
+   background-color: rgba($purple-dark, 0.45);
+   backdrop-filter: blur(5px);
+   border-radius: 5px;
+   margin: 0 auto;
+   position: relative;
+   padding: $pad-half;
+   width: 100%;
+   z-index: 5;
+
+   h1 {
+    margin-top: 0;
+   }
+
+   h1,
+   p {
+    text-align: center;
+   }
+
+   p {
+    font-size: toRem(1.2);
+    text-shadow: $shadow-text;
+   }
+
+   ul {
+    margin-bottom: $mrg-half;
+
+    li {
+     color: $text;
+     font-size: toRem(0.95);
+     font-weight: 400;
+     margin-bottom: $mrg-quarter;
+
+     span {
+      color: $color-white;
+      font-weight: 500;
+     }
+    }
+   }
+
+   @media (max-width: 600px) {
+    p {
+     font-size: toRem(1);
+    }
+
+    ul {
+     li {
+      font-size: toRem(0.85);
+     }
+    }
+   }
+  }
+ }
+ @media (max-width: 990px) {
+  padding: $pad-onehalf $pad-quarter;
+ }
+}
