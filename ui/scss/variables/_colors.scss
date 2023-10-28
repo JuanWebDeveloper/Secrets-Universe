@@ -1,7 +1,7 @@
 $purple-ultra-dark: #1a1a2a;
-$purple-very-dark: #2c1a4280;
-$purple-dark: #3c2c5080;
+$purple-very-dark: lighten(#1a1a2a80, 5);
+$purple-dark: darken(#3c2c5080, 5);
 $title: #90709e;
 $text: #b6a3c0;
 $color-white: #fafafa;
-$shadow: #b32afd2a;
+$shadow: #1b05274d;

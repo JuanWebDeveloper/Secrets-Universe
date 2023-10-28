@@ -3,4 +3,8 @@
 @import './variables/box';
 @import './variables/fonts';
 @import './variables/shadow';
+@import './variables/animations';
+//*> Global Styles
 @import './globals';
+//*> Shared Components Styles
+@import './components/shared/navbar';
