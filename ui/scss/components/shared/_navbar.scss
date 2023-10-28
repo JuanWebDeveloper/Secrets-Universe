@@ -46,11 +46,12 @@ header {
   backdrop-filter: blur(15px);
   background-color: $purple-dark;
   display: flex;
-  justify-content: space-between;
   height: 60px;
+  justify-content: space-between;
   position: relative;
   transition: $transition-primary;
   width: 100%;
+  z-index: 100;
 
   .logo {
    margin-left: $mrg-quarter;
@@ -117,8 +118,8 @@ header {
    margin-right: $mrg-quarter;
 
    a {
-    color: $text;
     border-radius: 5px;
+    color: $text;
     font-size: toRem(0.95);
     margin-right: $mrg-double;
     padding: $pad-min $pad-quarter;
@@ -166,7 +167,6 @@ header {
    left: 0;
    position: fixed;
    top: 0;
-   z-index: 100;
   }
  }
 }
