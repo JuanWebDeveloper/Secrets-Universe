@@ -1,6 +1,14 @@
 export const WelcomeBanner = () => {
+ const BaseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
+ const backgroundImageStyle = {
+  backgroundImage: `url('${BaseUrl}/images/welcome-background.jpg')`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+ };
+
  return (
-  <div className='welcome-banner'>
+  <div className='welcome-banner' style={backgroundImageStyle}>
    <div className='content'>
     <div className='banner-text'>
      <h1>
