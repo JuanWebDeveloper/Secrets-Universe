@@ -15,8 +15,8 @@
  }
 
  @media (max-width: 990px) {
-  font-size: toRem(1.3);
-  line-height: toRem(1.8);
+  font-size: toRem(1.4);
+  line-height: toRem(1.9);
  }
 }
 
@@ -36,21 +36,21 @@
   line-height: toRem(1.5);
  }
 
- @media (max-width: 1023px) {
-  font-size: toRem(1.1);
-  line-height: toRem(1.3);
+ @media (max-width: 990px) {
+  font-size: toRem(1.2);
+  line-height: toRem(1.4);
  }
 }
 
 @mixin text {
  color: $text-purple-light;
- font-size: toRem(0.95);
- font-weight: 300;
+ font-size: toRem(1.2);
+ font-weight: 400;
 
  span {
   color: $text-purple;
   text-shadow: $shadow-purple-light;
-  font-weight: 400;
+  font-weight: 500;
  }
 
  @media (max-width: 1023px) {

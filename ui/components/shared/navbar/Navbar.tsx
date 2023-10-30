@@ -35,7 +35,7 @@ export const Navbar = () => {
      <Link href='#home' onClick={closeNavigation}>
       Inicio
      </Link>
-     <Link href='#about' onClick={closeNavigation}>
+     <Link href='#aboutUs' onClick={closeNavigation}>
       Nosotros
      </Link>
      <Link href='#services' onClick={closeNavigation}>

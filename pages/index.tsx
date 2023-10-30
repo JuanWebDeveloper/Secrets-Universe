@@ -1,10 +1,11 @@
 import { Fragment } from 'react';
-import { WelcomeBanner } from '@/ui/components';
+import { WelcomeBanner, AboutUs } from '@/ui/components';
 
 const HomePage = () => {
  return (
   <Fragment>
    <WelcomeBanner />
+   <AboutUs />
   </Fragment>
  );
 };
