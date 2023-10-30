@@ -7,8 +7,8 @@ export const Navbar = () => {
 
  return (
   <header>
-   <div className='advertising-banne' id='home'>
-    <div className='welcome-text'>
+   <div className='advertising-banner' id='home'>
+    <div className='name-slogan'>
      <h2>
       Secrets <span>Universe</span>
      </h2>

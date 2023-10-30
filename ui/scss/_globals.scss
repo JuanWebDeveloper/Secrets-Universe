@@ -27,3 +27,26 @@ h4 {
 P {
  @include text;
 }
+
+//*> Globals Custom Classes
+.button-default {
+ background: radial-gradient(ellipse, $button-color-primary 0%, $button-color-tertiary 40%, $button-color-secondary 80%);
+ border-radius: 5px;
+ color: $text-white;
+ display: inline-block;
+ font-size: toRem(1.25);
+ font-weight: 500;
+ position: relative;
+ padding: $pad-quarter $pad-half;
+ transition: $transition-tertiary;
+
+ &:hover {
+  background: linear-gradient(45deg, $button-color-primary 0%, $button-color-tertiary 40%, $button-color-secondary 80%);
+  opacity: 0.7;
+  transform: scale(0.95);
+ }
+
+ @media (max-width: 600px) {
+  font-size: toRem(1.05);
+ }
+}

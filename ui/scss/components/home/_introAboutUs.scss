@@ -10,5 +10,11 @@
   h2 {
    text-align: center;
   }
+
+  .button-position {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: $mrg-half + $mrg-min;
+  }
  }
 }

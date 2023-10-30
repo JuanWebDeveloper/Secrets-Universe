@@ -1,3 +1,10 @@
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faWhatsapp);
+
 export const WelcomeBanner = () => {
  const BaseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -38,7 +45,10 @@ export const WelcomeBanner = () => {
       </li>
      </ul>
 
-     <p>¿Listo para explorar estos servicios?</p>
+     <p>¿Listo para explorar nuestros servicios?</p>
+     <Link href={'/#services'} className='button-default'>
+      Contactanos <FontAwesomeIcon icon={faWhatsapp} />
+     </Link>
     </div>
    </div>
   </div>

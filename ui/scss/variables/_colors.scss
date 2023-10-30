@@ -1,7 +1,10 @@
 $purple-ultra-dark: #1a1a2a;
-$purple-very-dark: lighten(#1a1a2a, 3);
+$purple-very-dark: lighten($purple-ultra-dark, 3);
 $purple-dark: darken(#3c2c5080, 5);
 $text-purple: #90709e;
 $text-purple-light: #b6a3c0;
 $text-white: #fafafa;
 $shadow: #1b0527;
+$button-color-primary: lighten($purple-ultra-dark, 2);
+$button-color-secondary: #28103b;
+$button-color-tertiary: #371057;

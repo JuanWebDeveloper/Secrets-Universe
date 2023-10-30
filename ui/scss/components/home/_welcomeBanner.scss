@@ -24,6 +24,7 @@
    border-radius: 5px;
    position: relative;
    padding: $pad-half;
+   text-align: center;
    width: 100%;
    z-index: 5;
 
@@ -36,27 +37,22 @@
     }
    }
 
-   h1,
    p {
-    text-align: center;
-   }
-
-   p {
-    font-size: toRem(1.2);
     text-shadow: $shadow-text;
+    margin-bottom: $mrg-half;
    }
 
    ul {
     margin-bottom: $mrg-half;
 
     li {
-     color: $text-purple-light;
-     font-size: toRem(0.95);
-     font-weight: 400;
+     @include text;
      margin-bottom: $mrg-quarter;
+     text-align: left;
 
      span {
       color: $text-white;
+      text-shadow: $shadow-white-light;
       font-weight: 500;
      }
     }
@@ -69,7 +65,7 @@
 
     ul {
      li {
-      font-size: toRem(0.85);
+      font-size: toRem(1);
      }
     }
    }
