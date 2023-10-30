@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
-import { handleNavbarScroll, handleBars } from '@/tools/helpers';
+import { handleNavbarScroll, handleBars, closeNavigation } from '@/tools/helpers';
 
 export const Navbar = () => {
  useEffect(() => addEventListener('scroll', handleNavbarScroll), []);
 
  return (
   <header>
-   <div className='advertising-banne'>
+   <div className='advertising-banne' id='home'>
     <div className='welcome-text'>
      <h2>
       Secrets <span>Universe</span>
@@ -18,23 +18,35 @@ export const Navbar = () => {
 
    <div className='navbar'>
     <div className='logo'>
-     <h3>
-      Secrets <span>Universe</span>
-     </h3>
+     <Link href='#home'>
+      <h3>
+       Secrets <span>Universe</span>
+      </h3>
+     </Link>
     </div>
 
-    <div className='bars' onClick={handleBars}>
-     <div className='bar'></div>
-     <div className='bar'></div>
-     <div className='bar'></div>
+    <div className='bars-menu' onClick={handleBars}>
+     <div className='single-bar'></div>
+     <div className='single-bar'></div>
+     <div className='single-bar'></div>
     </div>
 
     <div className='navigation'>
-     <Link href='#home'>Inicio</Link>
-     <Link href='#about'>Nosotros</Link>
-     <Link href='#services'>Servicios</Link>
-     <Link href='#testimonials'>Testimonios</Link>
-     <Link href='#contact'>Contacto</Link>
+     <Link href='#home' onClick={closeNavigation}>
+      Inicio
+     </Link>
+     <Link href='#about' onClick={closeNavigation}>
+      Nosotros
+     </Link>
+     <Link href='#services' onClick={closeNavigation}>
+      Servicios
+     </Link>
+     <Link href='#testimonials' onClick={closeNavigation}>
+      Testimonios
+     </Link>
+     <Link href='#contact' onClick={closeNavigation}>
+      Contacto
+     </Link>
     </div>
    </div>
   </header>

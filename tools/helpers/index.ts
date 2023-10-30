@@ -1,1 +1,1 @@
-export { handleNavbarScroll, handleBars } from './navbar/navbarHelpers';
+export { handleNavbarScroll, handleBars, closeNavigation } from './navbar/navbarHelpers';

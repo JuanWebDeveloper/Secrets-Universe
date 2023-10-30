@@ -1,22 +1,20 @@
-export const handleNavbarScroll = () => {
- const navbar: HTMLDivElement = document.querySelector('.navbar')!;
+const navbar: HTMLDivElement = document.querySelector('.navbar')!;
+const bars: HTMLDivElement = document.querySelector('.bars-menu')!;
+const navigation: HTMLDivElement = document.querySelector('.navigation')!;
 
- if (window.scrollY >= 350) {
-  navbar.classList.add('to-fixed');
+export const handleNavbarScroll = () =>
+ window.scrollY >= 350 ? navbar.classList.add('to-fixed') : navbar.classList.remove('to-fixed');
+
+export const handleBars = () => {
+ if (bars.classList.contains('bars-menu_open')) {
+  closeNavigation();
  } else {
-  navbar.classList.remove('to-fixed');
+  bars.classList.add('bars-menu_open');
+  navigation.classList.add('show-navigation');
  }
 };
 
-export const handleBars = () => {
- const bars: HTMLDivElement = document.querySelector('.bars')!;
- const navigation: HTMLDivElement = document.querySelector('.navigation')!;
-
- if (bars.classList.contains('active')) {
-  bars.classList.remove('active');
-  navigation.classList.remove('active');
- } else {
-  bars.classList.add('active');
-  navigation.classList.add('active');
- }
+export const closeNavigation = () => {
+ bars.classList.remove('bars-menu_open');
+ navigation.classList.remove('show-navigation');
 };

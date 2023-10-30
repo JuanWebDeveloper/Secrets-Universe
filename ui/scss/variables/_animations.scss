@@ -2,6 +2,7 @@ $transition-primary: all 0.55s cubic-bezier(0.395, 0.575, 0.565, 1);
 $transition-secondary: all 0.45s cubic-bezier(0.255, 0.463, 0.454, 0.94);
 $transition-tertiary: all 0.45s cubic-bezier(0.232, 0.657, 0.823, 0.62);
 $transition-fourth: all 0.35s cubic-bezier(0.455, 0.565, 0.675, 1);
+$navigation-animation: 0.75s cubic-bezier(0.755, 0.665, 0.875, 1) both;
 
 @mixin scaleXY-in {
  animation: scaleXY-in 0.45s cubic-bezier(0.355, 0.465, 0.475, 0.88) both;
@@ -26,5 +27,35 @@ $transition-fourth: all 0.35s cubic-bezier(0.455, 0.565, 0.675, 1);
  }
  100% {
   transform: scaleX(0%) scaleY(0%);
+ }
+}
+
+@mixin show-navigation-mobile {
+ animation: show-navigation-mobile $navigation-animation;
+}
+
+@keyframes show-navigation-mobile {
+ 0% {
+  transform: scaleX(0) scaleY(0);
+  right: -100%;
+ }
+ 100% {
+  transform: scaleX(1) scaleY(1);
+  right: 0%;
+ }
+}
+
+@mixin hide-navigation-mobile {
+ animation: hide-navigation-mobile $navigation-animation;
+}
+
+@keyframes hide-navigation-mobile {
+ 0% {
+  left: 0%;
+  transform: scaleX(1) scaleY(1);
+ }
+ 100% {
+  left: -100%;
+  transform: scaleX(0) scaleY(0);
  }
 }
