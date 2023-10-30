@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
-import { WelcomeBanner, AboutUs } from '@/ui/components';
+import { WelcomeBanner, IntroAboutUs } from '@/ui/components';
 
 const HomePage = () => {
  return (
   <Fragment>
    <WelcomeBanner />
-   <AboutUs />
+   <IntroAboutUs />
   </Fragment>
  );
 };
