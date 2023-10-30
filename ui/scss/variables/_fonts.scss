@@ -1,12 +1,12 @@
 @mixin title {
- color: $color-white;
+ color: $text-white;
  font-size: toRem(1.9);
  font-weight: 500;
  line-height: toRem(2.1);
  margin: $mrg-half 0;
 
  span {
-  color: $title;
+  color: $text-purple;
  }
 
  @media (max-width: 1200px) {
@@ -21,14 +21,14 @@
 }
 
 @mixin subtitle {
- color: $color-white;
+ color: $text-white;
  font-size: toRem(1.6);
  font-weight: 500;
  line-height: toRem(1.8);
  margin: $mrg-quarter 0;
 
  span {
-  color: $title;
+  color: $text-purple;
  }
 
  @media (max-width: 1200px) {
@@ -43,13 +43,13 @@
 }
 
 @mixin text {
- color: $text;
+ color: $text-purple-light;
  font-size: toRem(0.95);
  font-weight: 300;
 
  span {
-  color: $title;
-  text-shadow: $shadow-title-span;
+  color: $text-purple;
+  text-shadow: $shadow-purple-light;
   font-weight: 400;
  }
 

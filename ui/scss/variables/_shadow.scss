@@ -1,7 +1,13 @@
 $shadow-primary: 4px 8px 10px rgba($shadow, 0.6), -2px -1px 10px rgba($shadow, 0.6);
 $shadow-secondary: 5px 5px 6px rgba($shadow, 0.6);
-$shadow-navbar: 0px 2px 4px rgba($shadow, 0.3), 0px 3px 5px rgba($shadow, 0.2);
-$shadow-title: 1px 0.5px 0.5px rgba($color-white, 0.35), 1px 0.5px 0.5px rgba($color-white, 0.35),
- 1px 0.5px 0.5px rgba($color-white, 0.35);
-$shadow-title-span: 1px 0.5px 0.5px rgba($title, 0.35), 1px 0.5px 0.5px rgba($title, 0.35), 1px 0.5px 0.5px rgba($title, 0.35);
-$shadow-text: 1px 0.5px 0.5px rgba($text, 0.35), 1px 0.5px 0.5px rgba($text, 0.35), 1px 0.5px 0.5px rgba($text, 0.35);
+$shadow-navbar: 0px 2px 4px rgba($shadow, 0.4), 0px 3px 5px rgba($shadow, 0.8);
+$shadow-white: 1px 0.5px 0.5px rgba($text-white, 0.35), 1px 0.5px 0.5px rgba($text-white, 0.35),
+ 1px 0.5px 0.5px rgba($text-white, 0.35);
+$shadow-white-light: 0px 0.5px 0.5px rgba($text-white, 0.35), 0px 0.5px 0.5px rgba($text-white, 0.35),
+ 0px 0.5px 0.5px rgba($text-white, 0.35);
+$shadow-purple: 1px 0.5px 0.5px rgba($text-purple, 0.35), 1px 0.5px 0.5px rgba($text-purple, 0.35),
+ 1px 0.5px 0.5px rgba($text-purple, 0.35);
+$shadow-purple-light: 0.5px 0.5px 0.5px rgba($text-purple, 0.35), 0.5px 0.5px 0.5px rgba($text-purple, 0.35),
+ 0.5px 0.5px 0.5px rgba($text-purple, 0.35);
+$shadow-text: 1px 0.5px 0.5px rgba($text-purple-light, 0.35), 1px 0.5px 0.5px rgba($text-purple-light, 0.35),
+ 1px 0.5px 0.5px rgba($text-purple-light, 0.35);

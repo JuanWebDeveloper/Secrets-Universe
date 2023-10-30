@@ -1,9 +1,7 @@
-$transition-primary: all 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-$transition-secondary: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-$transition-tertiary: all 0.45s cubic-bezier(0.17, 0.67, 0.8, 0.62);
+$transition-primary: all 0.55s cubic-bezier(0.395, 0.575, 0.565, 1);
+$transition-secondary: all 0.45s cubic-bezier(0.255, 0.463, 0.454, 0.94);
+$transition-tertiary: all 0.45s cubic-bezier(0.232, 0.657, 0.823, 0.62);
 $transition-fourth: all 0.35s cubic-bezier(0.455, 0.565, 0.675, 1);
-
-$transition-navbar-secondary: all 0.75s cubic-bezier(0.755, 0.665, 0.875, 1);
 
 @mixin scaleXY-in {
  animation: scaleXY-in 0.45s cubic-bezier(0.355, 0.465, 0.475, 0.88) both;
