@@ -8,7 +8,7 @@ library.add(faWhatsapp);
 
 export const WelcomeBanner = () => {
  const backgroundImageStyle = {
-  backgroundImage: `url('${BaseUrl}/images/welcome-background.jpg')`,
+  backgroundImage: `url('${BaseUrl}/images/home/welcome-background.jpg')`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
  };

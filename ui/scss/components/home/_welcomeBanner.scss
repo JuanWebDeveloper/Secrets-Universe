@@ -37,13 +37,8 @@
     }
    }
 
-   p {
-    text-shadow: $shadow-text;
-    margin-bottom: $mrg-half;
-   }
-
    ul {
-    margin-bottom: $mrg-half;
+    margin: calc($mrg-half + $mrg-min) 0;
 
     li {
      @include text;
@@ -55,6 +50,17 @@
       text-shadow: $shadow-white-light;
       font-weight: 500;
      }
+    }
+   }
+
+   p {
+    text-shadow: $shadow-text;
+    margin-bottom: calc($mrg-half + $mrg-min);
+   }
+
+   .button-default {
+    svg {
+     color: #25d366;
     }
    }
 
@@ -71,6 +77,7 @@
    }
   }
  }
+
  @media (max-width: 990px) {
   padding: $pad-onehalf $pad-quarter;
   padding-top: $pad-fourth;
