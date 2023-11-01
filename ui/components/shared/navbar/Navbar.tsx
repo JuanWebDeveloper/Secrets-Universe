@@ -18,7 +18,7 @@ export const Navbar = () => {
 
    <div className='navbar'>
     <div className='logo'>
-     <Link href='#home'>
+     <Link href='/#home'>
       <h3>
        Secrets <span>Universe</span>
       </h3>
@@ -32,19 +32,19 @@ export const Navbar = () => {
     </div>
 
     <div className='navigation'>
-     <Link href='#home' onClick={closeNavigation}>
+     <Link href='/#home' onClick={closeNavigation}>
       Inicio
      </Link>
-     <Link href='#introAboutUs' onClick={closeNavigation}>
+     <Link href='/#introAboutUs' onClick={closeNavigation}>
       Nosotros
      </Link>
-     <Link href='#services' onClick={closeNavigation}>
+     <Link href='/#services' onClick={closeNavigation}>
       Servicios
      </Link>
-     <Link href='#testimonials' onClick={closeNavigation}>
+     <Link href='/#testimonials' onClick={closeNavigation}>
       Testimonios
      </Link>
-     <Link href='#contact' onClick={closeNavigation}>
+     <Link href='/#contact' onClick={closeNavigation}>
       Contacto
      </Link>
     </div>

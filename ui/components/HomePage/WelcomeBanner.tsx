@@ -2,12 +2,11 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { BaseUrl } from '@/tools/utils';
 
 library.add(faWhatsapp);
 
 export const WelcomeBanner = () => {
- const BaseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-
  const backgroundImageStyle = {
   backgroundImage: `url('${BaseUrl}/images/welcome-background.jpg')`,
   backgroundSize: 'cover',
