@@ -1,0 +1,27 @@
+.about-us_details {
+ margin-top: $mrg-onehalf;
+ position: relative;
+ width: 100%;
+
+ .content {
+  position: relative;
+  width: 100%;
+
+  .detail-of_us-left,
+  .detail-of_us-right {
+   position: relative;
+   padding: $pad-onehalf $pad-half;
+   width: 100%;
+  }
+
+  .detail-of_us-right {
+   background-color: $purple-very-dark;
+   box-shadow: $shadow-secondary;
+   text-align: right;
+   h2 {
+    color: $text-purple;
+    text-shadow: $shadow-purple;
+   }
+  }
+ }
+}
