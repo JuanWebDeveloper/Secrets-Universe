@@ -1,13 +1,16 @@
+//*> Styling Variables
 @import './variables/colors';
 @import './variables/functions';
 @import './variables/box';
 @import './variables/fonts';
 @import './variables/shadow';
 @import './variables/animations';
-//*> Global Styles
+//*> These Styles Apply Globally To The Entire Project
 @import './globals';
-//*> Shared Components Styles
+//*> Shared Component Styles Of The Project
 @import './components/shared/navbar';
-//*> Pages Components Styles
+//*> Component Styles Of The Home Page
 @import './components/home/welcomeBanner';
 @import './components/home/introAboutUs';
+//*> Component Styles Of The About Us Page
+@import './components/aboutUs/aboutUsOverview';

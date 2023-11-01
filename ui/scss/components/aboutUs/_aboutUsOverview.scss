@@ -1,0 +1,26 @@
+.about-us_overview {
+ @include overlay-background;
+ padding: $pad-double;
+ padding-top: $pad-fourth;
+
+ .content {
+  @include background-effect;
+
+  h2,
+  h3 {
+   text-align: center;
+  }
+
+  h2 {
+   span {
+    text-shadow: $shadow-purple;
+   }
+  }
+
+  h3 {
+   color: $text-purple-light;
+   margin-bottom: $mrg-half;
+   text-shadow: $shadow-purple-light;
+  }
+ }
+}

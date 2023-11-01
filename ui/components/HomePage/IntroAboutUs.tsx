@@ -17,7 +17,7 @@ export const IntroAboutUs = () => {
      respuestas profundas o desees atraer prosperidad y positividad a tu vida, estaremos aquí para guiarte.
     </p>
     <div className='button-position'>
-     <Link href={''} className='btn-more_about-us'>
+     <Link href={'/aboutUs'} className='btn-more_about-us'>
       Conocenos Mejor <FontAwesomeIcon icon={faArrowRight} />
      </Link>
     </div>

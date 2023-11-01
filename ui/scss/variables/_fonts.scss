@@ -22,9 +22,9 @@
 
 @mixin subtitle {
  color: $text-white;
- font-size: toRem(1.6);
+ font-size: toRem(1.5);
  font-weight: 500;
- line-height: toRem(1.8);
+ line-height: toRem(1.7);
  margin: $mrg-quarter 0;
 
  span {
