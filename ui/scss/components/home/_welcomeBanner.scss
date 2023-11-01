@@ -1,32 +1,15 @@
 .welcome-banner {
- position: relative;
+ @include overlay-background;
  padding: $pad-double;
  padding-top: $pad-fourth;
- width: 100%;
-
- &::before {
-  background-color: rgba($purple-ultra-dark, 0.9);
-  content: '';
-  height: 100%;
-  left: 0%;
-  position: absolute;
-  top: 0%;
-  width: 100%;
- }
 
  .content {
   position: relative;
   width: 100%;
 
   .banner-text {
-   background-color: rgba($purple-dark, 0.45);
-   backdrop-filter: blur(5px);
-   border-radius: 5px;
-   position: relative;
-   padding: $pad-half;
+   @include background-effect;
    text-align: center;
-   width: 100%;
-   z-index: 5;
 
    h1 {
     margin-top: 0;
@@ -58,7 +41,9 @@
     margin-bottom: calc($mrg-half + $mrg-min);
    }
 
-   .button-default {
+   &_contact-btn {
+    @include button-styles;
+
     svg {
      color: #25d366;
     }

@@ -20,6 +20,7 @@ export const WelcomeBanner = () => {
      <h1>
       <span>Rediseña Tu Destino:</span> Los Encantos Ocultos de Nuestros Servicios
      </h1>
+
      <ul>
       <li>
        <span>🃏 Lecturas de Tarot:</span> Descubre las respuestas a tus preguntas con las cartas del tarot.
@@ -45,7 +46,7 @@ export const WelcomeBanner = () => {
      </ul>
 
      <p>¿Listo para explorar nuestros servicios?</p>
-     <Link href={'/#services'} className='button-default'>
+     <Link href={'/#services'} className='banner-text_contact-btn'>
       Contactanos <FontAwesomeIcon icon={faWhatsapp} />
      </Link>
     </div>

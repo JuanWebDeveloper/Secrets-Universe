@@ -15,6 +15,10 @@
    display: flex;
    justify-content: flex-end;
    margin-top: $mrg-half + $mrg-min;
+
+   .btn-more_about-us {
+    @include button-styles;
+   }
   }
  }
 }

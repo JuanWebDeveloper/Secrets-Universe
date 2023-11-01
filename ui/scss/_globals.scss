@@ -28,8 +28,8 @@ P {
  @include text;
 }
 
-//*> Globals Custom Classes
-.button-default {
+//*> Reusable Mixins For Global Styles
+@mixin button-styles {
  background: radial-gradient(ellipse, $button-color-primary 0%, $button-color-tertiary 40%, $button-color-secondary 80%);
  border-radius: 5px;
  color: $text-white;
@@ -48,5 +48,30 @@ P {
 
  @media (max-width: 600px) {
   font-size: toRem(1.05);
+ }
+}
+
+@mixin background-effect {
+ background-color: rgba($purple-dark, 0.45);
+ backdrop-filter: blur(5px);
+ border-radius: 5px;
+ position: relative;
+ padding: $pad-half;
+ width: 100%;
+ z-index: 1;
+}
+
+@mixin overlay-background {
+ position: relative;
+ width: 100%;
+
+ &::before {
+  background-color: rgba($purple-ultra-dark, 0.9);
+  content: '';
+  height: 100%;
+  left: 0%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
  }
 }
