@@ -1,5 +1,6 @@
 export { default as Layout } from './layout/Layout';
 export { Navbar } from './shared/navbar/Navbar';
+export { ADBanner } from './shared/adBanner/ADBanner';
 export { WelcomeBanner } from './home/WelcomeBanner';
 export { IntroAboutUs } from './home/IntroAboutUs';
 export { AboutUsOverview } from './AboutUs/AboutUsOverview';

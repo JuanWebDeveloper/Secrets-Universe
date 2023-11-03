@@ -1,0 +1,38 @@
+.advertising-banner {
+ height: 350px;
+ position: relative;
+ padding: $pad-quarter;
+ width: 100%;
+
+ .name-slogan {
+  background-color: $purple-very-dark;
+  border-radius: 5px;
+  bottom: toRem(1);
+  box-shadow: $shadow-secondary;
+  left: 50%;
+  position: absolute;
+  padding: $pad-quarter;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 75%;
+
+  h2 {
+   margin-top: 0;
+  }
+
+  p {
+   font-size: toRem(1.2);
+   text-shadow: $shadow-text;
+  }
+
+  @media (max-width: 990px) {
+   width: 95%;
+  }
+
+  @media (max-width: 600px) {
+   p {
+    font-size: toRem(0.9);
+   }
+  }
+ }
+}

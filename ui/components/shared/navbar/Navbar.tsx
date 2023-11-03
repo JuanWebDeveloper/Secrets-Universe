@@ -1,21 +1,14 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { handleNavbarScroll, handleBars, closeNavigation } from '@/tools/helpers';
+import { ADBanner } from '@/ui/components';
 
 export const Navbar = () => {
  useEffect(() => addEventListener('scroll', handleNavbarScroll), []);
 
  return (
-  <header>
-   <div className='advertising-banner' id='home'>
-    <div className='name-slogan'>
-     <h2>
-      Secrets <span>Universe</span>
-     </h2>
-     <p>¡Sé el Dueño de tu Destino: Descubre lo que el Universo Tiene Preparado para Ti!</p>
-    </div>
-   </div>
-
+  <header className='header'>
+   <ADBanner sloganUserParam={true} />
    <div className='navbar'>
     <div className='logo'>
      <Link href='/#home'>
