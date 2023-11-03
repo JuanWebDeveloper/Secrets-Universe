@@ -4,7 +4,7 @@ export const ADBanner = (sloganUserParam: boolean | any) => {
  const [showSlogan] = useState(sloganUserParam);
 
  return (
-  <div className='advertising-banner' id='home'>
+  <div className='advertising-banner' id='home' style={{ display: 'block' }}>
    {showSlogan && (
     <div className='name-slogan'>
      <h2>

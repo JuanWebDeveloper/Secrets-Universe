@@ -1,3 +1,4 @@
+import { BaseUrl } from '@/tools/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,7 +12,7 @@ export const SingleCard = ({ title, description, image }: typeDataServiceCard) =
  return (
   <div className='single-card'>
    <div className='card-image'>
-    <Image src={image} width={500} height={500} alt={`Image of ${title}`} />
+    <Image src={`${BaseUrl + image}`} width={500} height={500} alt={`Image of ${title}`} />
    </div>
    <div className='card-text'>
     <h4 className='card-title'>{title}</h4>
