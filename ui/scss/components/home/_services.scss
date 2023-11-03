@@ -1,0 +1,32 @@
+.services {
+ margin-top: $mrg-triple;
+ position: relative;
+
+ .content {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+
+  .services-text {
+   position: relative;
+   text-align: center;
+
+   h3 {
+    color: $text-purple;
+    text-shadow: $shadow-purple-light;
+   }
+  }
+
+  .services-cards {
+   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   position: relative;
+
+   @media (max-width: 1024px) {
+    justify-content: space-around;
+   }
+  }
+ }
+}

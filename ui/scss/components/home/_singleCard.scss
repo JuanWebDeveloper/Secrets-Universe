@@ -1,0 +1,63 @@
+.single-card {
+ background: radial-gradient(circle, $purple-very-dark 60%, $purple-ultra-dark 100%);
+ box-shadow: $shadow-primary;
+ border-radius: 5px;
+ margin-top: $mrg-onehalf;
+ position: relative;
+ padding: $pad-half;
+ text-align: center;
+ transition: $transition-secondary;
+ width: 30%;
+
+ .card-image {
+  @include overlay-background;
+  height: 150px;
+  margin: 0 auto;
+  width: 150px;
+
+  &::before {
+   background-color: rgba($purple-ultra-dark, 0.4);
+  }
+
+  img {
+   box-shadow: $shadow-primary;
+   border-radius: 15px;
+   height: 100%;
+   width: 100%;
+  }
+ }
+
+ .card-text {
+  margin: $mrg-half 0;
+  position: relative;
+
+  .card-title {
+   font-size: toRem(1.2);
+  }
+
+  .card-description {
+   font-size: toRem(0.94);
+  }
+ }
+
+ .consult-button {
+  @include button-styles;
+  box-shadow: $shadow-navbar;
+  font-size: toRem(1.1);
+  padding: $pad-min $pad-half;
+ }
+
+ &:hover {
+  transform: translateY(-$mrg-half) scale(0.95);
+ }
+
+ @media (max-width: 1024px) {
+  width: 45%;
+ }
+
+ @media (max-width: 600px) {
+  margin: 0 auto;
+  margin-top: $mrg-onehalf;
+  width: 95%;
+ }
+}
