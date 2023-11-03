@@ -1,0 +1,28 @@
+.meet-expert_team {
+ margin-top: $mrg-double;
+ position: relative;
+ width: 100%;
+
+ .content {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+
+  .introduction-to_team-info {
+   @include overlay-background;
+   padding: $pad-half;
+   margin-bottom: $mrg-onehalf;
+
+   .text {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    h2 {
+     text-align: center;
+     text-shadow: $shadow-white;
+    }
+   }
+  }
+ }
+}

@@ -1,11 +1,12 @@
 import { Fragment } from 'react';
-import { AboutUsOverview, AboutUsDetails } from '@/ui/components';
+import { AboutUsOverview, AboutUsDetails, MeetOurExpertTeam } from '@/ui/components';
 
 const AboutUs = () => {
  return (
   <Fragment>
    <AboutUsOverview />
    <AboutUsDetails />
+   <MeetOurExpertTeam />
   </Fragment>
  );
 };
