@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { WelcomeBanner, IntroAboutUs, Services } from '@/ui/components';
+import { WelcomeBanner, IntroAboutUs, Services, Testimonials } from '@/ui/components';
 
 const HomePage = () => {
  return (
@@ -7,6 +7,7 @@ const HomePage = () => {
    <WelcomeBanner />
    <IntroAboutUs />
    <Services />
+   <Testimonials />
   </Fragment>
  );
 };
