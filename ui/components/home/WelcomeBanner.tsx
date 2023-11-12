@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { BaseUrl } from '@/tools/utils';
+import { openWhatsApp } from '@/tools/helpers';
 
 library.add(faWhatsapp);
 
@@ -46,9 +46,9 @@ export const WelcomeBanner = () => {
      </ul>
 
      <p>¿Listo para explorar nuestros servicios?</p>
-     <Link href={'/#services'} className='banner-text_contact-btn'>
+     <button className='banner-text_contact-btn' onClick={() => openWhatsApp('default')}>
       Contactanos <FontAwesomeIcon icon={faWhatsapp} />
-     </Link>
+     </button>
     </div>
    </div>
   </div>

@@ -12,7 +12,7 @@ export const Testimonials = () => {
  const [currentTestimonial, setCurrentTestimonial] = useState(1);
 
  return (
-  <div className='testimonials'>
+  <div className='testimonials' id='testimonials'>
    <div className='content'>
     <h2>Experiencias de Nuestros Clientes</h2>
 

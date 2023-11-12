@@ -1,6 +1,6 @@
-import { BaseUrl } from '@/tools/utils';
 import Image from 'next/image';
-import Link from 'next/link';
+import { BaseUrl } from '@/tools/utils';
+import { openWhatsApp } from '@/tools/helpers';
 
 interface typeDataServiceCard {
  title: string;
@@ -18,9 +18,9 @@ export const SingleCard = ({ title, description, image }: typeDataServiceCard) =
     <h4 className='card-title'>{title}</h4>
     <p className='card-description'>{description}</p>
    </div>
-   <Link target='_Blank' href={''} className='consult-button'>
+   <button className='consult-button' onClick={() => openWhatsApp(title)}>
     Consulta Ya
-   </Link>
+   </button>
   </div>
  );
 };

@@ -1,0 +1,23 @@
+.contact {
+ margin-top: $mrg-triple;
+ position: relative;
+
+ .content {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 95%;
+
+  p {
+   text-align: left;
+  }
+
+  button {
+   @include button-styles;
+
+   svg {
+    color: #25d366;
+   }
+  }
+ }
+}

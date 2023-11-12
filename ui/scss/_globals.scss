@@ -1,5 +1,6 @@
 * {
  box-sizing: border-box;
+ border: none;
  list-style: none;
  margin: 0;
  padding: 0;
@@ -26,6 +27,10 @@ h4 {
 
 P {
  @include text;
+}
+
+button {
+ cursor: pointer;
 }
 
 //*> Reusable Mixins For Global Styles
