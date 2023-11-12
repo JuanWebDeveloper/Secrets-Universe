@@ -4,10 +4,16 @@ import { handleNavbarScroll, handleBars, closeNavigation } from '@/tools/helpers
 import { ADBanner } from '@/ui/components';
 
 export const Navbar = () => {
- useEffect(() => addEventListener('scroll', handleNavbarScroll), []);
+ useEffect(() => {
+  const navbar: HTMLDivElement = document.querySelector('.navbar')!;
+  const rect = navbar.getBoundingClientRect();
+  const initialPosition = rect.top + window.scrollY;
+
+  handleNavbarScroll(initialPosition);
+ }, []);
 
  return (
-  <header className='header'>
+  <header className='header' id='home'>
    <ADBanner sloganUserParam={true} />
    <div className='navbar'>
     <div className='logo'>

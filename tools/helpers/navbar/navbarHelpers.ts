@@ -1,6 +1,17 @@
-export const handleNavbarScroll = () => {
+export const handleNavbarScroll = (initialPosition: number) => {
  const navbar: HTMLDivElement = document.querySelector('.navbar')!;
- window.scrollY >= 350 ? navbar.classList.add('to-fixed') : navbar.classList.remove('to-fixed');
+
+ const applyFixedClass = () => {
+  if (window.scrollY > initialPosition) {
+   navbar.classList.add('to-fixed');
+  } else {
+   navbar.classList.remove('to-fixed');
+  }
+ };
+
+ applyFixedClass();
+
+ window.addEventListener('scroll', applyFixedClass);
 };
 
 export const handleBars = () => {

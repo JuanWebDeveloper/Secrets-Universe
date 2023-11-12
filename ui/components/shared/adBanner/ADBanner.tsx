@@ -1,6 +1,6 @@
 export const ADBanner = ({ sloganUserParam }: { sloganUserParam: boolean }) => {
  return (
-  <div className='advertising-banner' id='home' style={{ display: 'block' }}>
+  <div className='advertising-banner' style={{ display: 'block' }}>
    {sloganUserParam && (
     <div className='name-slogan'>
      <h2>
