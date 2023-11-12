@@ -1,0 +1,50 @@
+.testimonial {
+ background-color: $purple-dark;
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ justify-content: center;
+ position: absolute;
+ padding: $pad-half;
+ width: 100%;
+
+ .user-data {
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  img {
+   border-radius: 50%;
+   box-shadow: $shadow-secondary;
+
+   @media (max-width: 600px) {
+    height: 75px;
+    width: 75px;
+   }
+  }
+ }
+
+ .user-qualification {
+  font-size: toRem(1.25);
+  position: relative;
+  text-align: center;
+
+  div {
+   svg {
+    color: $text-purple;
+    margin-left: $mrg-quarter;
+
+    &:first-child {
+     margin-left: 0;
+    }
+   }
+  }
+ }
+
+ .user-testimonial {
+  h3 {
+   text-align: center;
+   margin: $mrg-half 0;
+  }
+ }
+}
