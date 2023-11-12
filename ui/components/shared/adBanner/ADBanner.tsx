@@ -1,11 +1,7 @@
-import { useState } from 'react';
-
-export const ADBanner = (sloganUserParam: boolean | any) => {
- const [showSlogan] = useState(sloganUserParam);
-
+export const ADBanner = ({ sloganUserParam }: { sloganUserParam: boolean }) => {
  return (
   <div className='advertising-banner' id='home' style={{ display: 'block' }}>
-   {showSlogan && (
+   {sloganUserParam && (
     <div className='name-slogan'>
      <h2>
       Secrets <span>Universe</span>

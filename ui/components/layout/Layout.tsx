@@ -1,6 +1,6 @@
 import { Fragment, ReactNode } from 'react';
 import { Raleway } from '@next/font/google';
-import { Navbar } from '@/ui/components';
+import { Navbar, Footer } from '@/ui/components';
 
 type LayoutModel = {
  children: ReactNode;
@@ -14,6 +14,7 @@ const Layout = ({ children }: LayoutModel) => {
    <main className={`${raleway.className}`}>
     <Navbar />
     {children}
+    <Footer />
    </main>
   </Fragment>
  );

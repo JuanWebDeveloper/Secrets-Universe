@@ -1,0 +1,18 @@
+footer {
+ margin-top: $mrg-triple;
+ position: relative;
+
+ .text-copy {
+  background-color: $purple-dark;
+  color: $text-purple-light;
+  font-size: toRem(1);
+  position: relative;
+  padding: $pad-quarter;
+  text-align: center;
+  width: 100%;
+
+  span {
+   color: $text-purple;
+  }
+ }
+}
