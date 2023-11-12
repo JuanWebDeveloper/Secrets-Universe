@@ -1,5 +1,6 @@
-import { BaseUrl } from '@/tools/utils';
 import Image from 'next/image';
+import { BaseUrl } from '@/tools/utils';
+import { StartQualification } from '@/ui/components';
 
 export interface typeDataTestimonial {
  name: string;
@@ -23,7 +24,9 @@ export const SingleTestimonial = (dataTestimonial: typeDataTestimonial) => {
     />
     <h2>{name}</h2>
    </div>
-   <div className='user-qualification'>{qualification}</div>
+   <div className='user-qualification'>
+    <StartQualification qualification={qualification} />
+   </div>
    <div className='user-testimonial'>
     <h3>{serviceType}</h3>
     <p>{testimonial}</p>

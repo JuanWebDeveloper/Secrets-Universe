@@ -29,7 +29,7 @@ export const TestimonialsData: typeData[] = [
  {
   name: 'Isabella Rodríguez',
   serviceType: 'Rituales para la Prosperidad',
-  qualification: 5,
+  qualification: 4,
   testimonial:
    'Los rituales para la prosperidad me ayudaron a atraer la abundancia a mi vida. Estoy agradecida por el apoyo de Secrets Universe. Son verdaderos expertos en su campo.',
   image: 'isabella-rodriguez.jpeg',
