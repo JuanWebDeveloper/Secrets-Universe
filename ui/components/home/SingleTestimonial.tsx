@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { BaseUrl } from '@/tools/utils';
 import { StartQualification } from '@/ui/components';
 
-export interface typeDataTestimonial {
+interface typeDataTestimonial {
  name: string;
  serviceType: string;
  qualification: number;
