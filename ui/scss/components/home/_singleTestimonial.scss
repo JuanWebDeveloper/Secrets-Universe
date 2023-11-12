@@ -47,4 +47,12 @@
    margin: $mrg-half 0;
   }
  }
+
+ &.next-testimonial {
+  @include slider-next;
+ }
+
+ &.prev-testimonial {
+  @include slider-prev;
+ }
 }

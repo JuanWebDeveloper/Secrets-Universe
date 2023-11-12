@@ -16,6 +16,44 @@
    position: relative;
    width: 100%;
 
+   .controls {
+    left: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 5;
+
+    &-arrow {
+     display: flex;
+     justify-content: space-between;
+     padding: 0 $pad-onehalf;
+     width: 100%;
+
+     button {
+      background-color: transparent;
+      border: none;
+      color: $text-white;
+      cursor: pointer;
+      font-size: toRem(2);
+      transition: $transition-primary;
+
+      &:hover {
+       scale: 1.2;
+       text-shadow: $shadow-white;
+      }
+     }
+
+     @media (max-width: 600px) {
+      padding: 0 $pad-half;
+
+      button {
+       font-size: toRem(1.5);
+      }
+     }
+    }
+   }
+
    @media (max-width: 600px) {
     height: 450px;
    }

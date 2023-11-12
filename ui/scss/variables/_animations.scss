@@ -58,3 +58,30 @@ $navigation-animation: 0.75s cubic-bezier(0.755, 0.665, 0.875, 1) both;
   transform: scaleX(0) scaleY(0);
  }
 }
+
+@mixin slider-next() {
+ animation: slider-next 1.2s cubic-bezier(0.462, 0.765, 0.345, 1.2) both;
+}
+
+@keyframes slider-next {
+ 0% {
+  transform: translateX(-100%);
+ }
+ 100% {
+  transform: translateX(0%);
+ }
+}
+
+@mixin slider-prev() {
+ animation: slider-prev 1.2s cubic-bezier(0.462, 0.765, 0.345, 1.2) both;
+}
+
+@keyframes slider-prev {
+ 0% {
+  transform: translateX(100%);
+ }
+
+ 100% {
+  transform: translateX(0%);
+ }
+}
